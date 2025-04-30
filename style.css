@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1200x400/?formula1') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #222;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero button:hover {
+  background-color: darkred;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: white;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.footer {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* CABEÇALHO */
+  .header {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.5rem 4rem;
+  }
+  
+  .header h1 {
+    font-size: 5.2rem;
+  }
+  
+  .nav a {
+    color: white;
+    margin-left: 5rem;
+    text-decoration: none;
+    font-size: 4.3rem;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* HERO */
+  .hero {
+    background: url('https://source.unsplash.com/1600x500/?formula1') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    background-color: #222;
+  }
+  
+  .hero h2 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 3.7rem;
+    margin-bottom: 5rem;
+  }
+  
+  .hero button {
+    padding: 1rem 2rem;
+    font-size: 4.3rem;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .hero button:hover {
+    background-color: darkred;
+  }
+  
+  /* GALERIA */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 3rem;
+    background-color: white;
+  }
+  
+  .gallery img {
+    width: 900px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* RODAPÉ */
+  .footer {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9.5rem;
+  }
+  
+  .footer p {
+    font-size: 5.2rem;
+  }
+
+  .team h3 {
+    font-size: 10rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #000;
+  }
+  
+  .team p {
+    font-size: 4rem;
+    color: #444;
+    margin-top: 0.5rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+  
+    .header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .nav a {
+      font-size: 1.5rem;
+      margin: 0.5rem;
+    }
+  
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url('imagem-tablet.jpg');
+      padding: 2rem 1rem;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .hero button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .gallery img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+    }
+  
+    .footer p {
+      font-size: 1rem;
+    }
+  }
+  
+    
+    
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+  
+    .nav a {
+      font-size: 1.2rem;
+    }
+  
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url('imagem-celular.jpg');
+      padding: 1.5rem 1rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .hero button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+  
+    .footer p {
+      font-size: 0.9rem;
+    }
+  }
+  .gallery2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Para quebrar em linhas menores se a tela for pequena */
+  }
+  
+  .gallery2 img {
+    width: 1000px; /* Aumente esse valor como quiser */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery2 img:hover {
+    transform: scale(1.05);
+  }
+  .gallery1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery1 img {
+    width: 1625px;  /* Aumente esse valor se quiser imagens maiores */
+    height: auto;
+    border-radius: 10px; /* opcional: cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra leve */
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery1 img:hover {
+    transform: scale(1.05); /* efeito zoom no hover */
+  }
+  
